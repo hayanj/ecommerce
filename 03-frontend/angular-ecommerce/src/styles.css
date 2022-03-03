@@ -1,1 +1,64 @@
 /* You can add global styles to this file, and also import other style files */
+/*
+ * ----------------------------
+ * Common CSS
+ * ----------------------------
+ */
+ @import "~bootstrap/dist/css/bootstrap.min.css";
+
+
+.cart-area.d-n{
+    display:block
+}
+
+.cart-area i{
+    font-size:22px;
+    float:left;
+    margin-top:16px;
+    color:#fff;
+    margin-left:15px
+}
+
+.total{
+    background:black;
+    line-height:43px;
+    color: white;
+    border-radius:30px;
+    border:1px solid black;
+    float:left;
+    margin-bottom:2px;
+    padding-left:17px;
+    margin-right: 4px;
+}
+
+.total span{
+    display:inline-block;
+    background:#fff;
+    padding:0 13px;
+    color:#000;
+    border-top-right-radius:20px;
+    border-bottom-right-radius:20px;
+    margin-left:11px
+}
+
+
+
+
+footer ul li a{
+    color:#fff
+}
+footer{
+    background:#232324;
+    z-index:1;
+    position:relative;
+    text-align:center
+}
+footer li a{
+    color:#313131;
+    font-weight:500
+}
+footer ul li{
+    display:inline-block;
+    font-size:14px;
+    padding:10px 20px
+}
