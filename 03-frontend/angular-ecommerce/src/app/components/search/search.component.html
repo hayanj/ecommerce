@@ -1,0 +1,8 @@
+<div class="d-flex">
+  <input #myInput type="text" 
+                  placeholder="Search for products"
+                  class="form-control me-2"
+                  aria-label="Search"
+                  (keyup.enter)="doSearch(myInput.value)"/>
+  <button (click) = "doSearch(myInput.value)" class="btn btn-outline-success">Search</button>
+</div>
