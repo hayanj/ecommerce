@@ -1,0 +1,6 @@
+  <!-- <li ngbDropdownItem><hr class="dropdown-divider"></li>
+  <li ngbDropdownItem><a class="dropdown-item" href="#">Something else here</a></li> -->
+
+  <li *ngFor="let tempProductCategory of productCategories">
+    <a class="dropdown-item" routerLink="/category/{{ tempProductCategory.id }}" routerLinkActive="active">{{ tempProductCategory.categoryName }}</a>
+  </li>

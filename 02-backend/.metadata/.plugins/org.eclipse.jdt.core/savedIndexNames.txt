@@ -34,8 +34,8 @@ INDEX VERSION 1.131+/Users/hayaaljuraysi/ecommerce-project/02-backend/.metadata/
 3424846285.index
 4223623099.index
 2758861140.index
-1280737977.index
 3311038409.index
+1280737977.index
 3899960200.index
 2779421265.index
 3830346430.index
@@ -50,8 +50,8 @@ INDEX VERSION 1.131+/Users/hayaaljuraysi/ecommerce-project/02-backend/.metadata/
 3282207335.index
 2140596183.index
 242468041.index
-3492243602.index
 3335403006.index
+3492243602.index
 4030203534.index
 2306943056.index
 2455774698.index
