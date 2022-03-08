@@ -89,6 +89,8 @@ fastlane/test_output
 
 iOSInjectionProject/
 
-.angular/
-.vscode/
-.metadata/
+.angular
+.vscode
+.metadata
+.mvn/wrapper
+node_modules

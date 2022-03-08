@@ -1,12 +1,16 @@
     <div class="container mt-4 mb-4">
       <div class="row">
         <div *ngFor="let tempProduct of products" class="col-md-3">
-            <div class="card d-inline" style="width: 18rem;">
-              <img src="{{ tempProduct.imageUrl }}" class="card-img-top" alt="...">
+            <div class="card mb-3" style="width: 18rem;">
+              <a routerLink="/products/{{ tempProduct.id }}">
+                <img src="{{ tempProduct.imageUrl }}" class="card-img-top" alt="...">
+              </a>
               <div class="card-body">
-                <h6 class="card-title">{{ tempProduct.name }}</h6>
+                <a routerLink="/products/{{ tempProduct.id }}" class="text-dark">
+                  <h6 class="card-title">{{ tempProduct.name }}</h6>
+                </a>
                 <p class="card-text">{{ tempProduct.unitPrice | currency: 'USD'}}</p>
-                <a href="#" class="btn btn-dark">Add to cart</a>
+                <a href="#" class="btn btn-primary">Add to cart</a>
               </div>
             </div>
         </div>
