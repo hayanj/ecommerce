@@ -14,7 +14,7 @@
     <p class="lead"><strong class="fw-bold">{{ product.name }}</strong> | <i class="fs-6 fw-lighter">{{product.unitPrice | currency: 'USD'}}</i></p>
     <hr class="my-4">
     <p>{{product.description}}</p>
-    <a class="btn btn-primary btn-lg" href="#" role="bustton">Add to cart</a>
+    <button (click)="addToCart()" class="btn btn-primary btn-lg">Add to cart</button>
     <a routerLink="/products"  class="btn btn-secondary btn-lg ms-2" href="#" role="button">Back to products</a>
 
 
