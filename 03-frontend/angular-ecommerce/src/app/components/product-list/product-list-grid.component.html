@@ -19,4 +19,23 @@
           No products were found.
         </div>
       </div>
+      <div class="d-flex justify-content-center">
+        <ngb-pagination [(page)]="thePageNumber"
+                        [pageSize]="thePageSize"
+                        [collectionSize]="theTotalElements"
+                        [maxSize]="5"
+                        [boundaryLinks]="true"
+                        (pageChange)="listProducts()">
+
+        </ngb-pagination>
+        <span class="ms-3 mt-2">Page Size</span>
+        <div class="btn-sm mb-1">
+          <select (change)="updatePageSize($event)" class="btn btn-primary btn-sm">
+            <option selected="true">5</option>
+            <option>10</option>
+            <option>20</option>
+            <option>50</option>
+          </select>
+        </div>
+      </div>
     </div>
