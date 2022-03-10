@@ -22,8 +22,10 @@
       <h5>Shipping Address</h5>
       <div class="col-6">
         <label for="country" class="form-label">Country</label>
-        <select class="form-control" formControlName="country">
-          <option>TO DO</option>
+        <select class="form-control" formControlName="country" (change)="getStates('shippingAddress')">
+          <option *ngFor="let country of countries" [ngValue]="country">
+            {{ country.name }}
+          </option>
         </select>
       </div>
       <div class="col-6">
@@ -37,7 +39,9 @@
       <div class="col-6">
         <label for="state" class="form-label">State</label>
         <select class="form-control" formControlName="state">
-          <option>TO DO</option>
+          <option *ngFor="let state of shippingAddressStates" [ngValue] = "state" >
+            {{ state.name }}
+          </option>
         </select>
       </div>
       <div class="col-md-6">
@@ -57,8 +61,10 @@
       <h5>Billing Address</h5>
       <div class="col-6">
         <label for="country" class="form-label">Country</label>
-        <select class="form-control" formControlName="country">
-          <option>TO DO</option>
+        <select class="form-control" formControlName="country" (change)="getStates('billingAddress')">
+          <option *ngFor="let country of countries" [ngValue]="country">
+            {{ country.name }}
+          </option>
         </select>
       </div>
       <div class="col-6">
@@ -72,7 +78,9 @@
       <div class="col-6">
         <label for="state" class="form-label">State</label>
         <select class="form-control" formControlName="state">
-          <option>TO DO</option>
+          <option *ngFor="let state of billingAddressStates" [ngValue] = "state">
+            {{ state.name }}
+          </option>
         </select>
       </div>
       <div class="col-md-6">
@@ -109,14 +117,18 @@
       <div class="col-6">
         <label for="expirationMonth" class="form-label">Expiration Month</label>
         <select class="form-control" formControlName="expirationMonth">
-          <option>TO DO</option>
+          <option *ngFor="let month of creditCardMonths">
+            {{ month }}
+          </option>
         </select>
       </div>
 
       <div class="col-6">
         <label for="expirationYear" class="form-label">Expiration Year</label>
-        <select class="form-control" formControlName="expirationYear">
-          <option>TO DO</option>
+        <select class="form-control" formControlName="expirationYear" (change)="handleMonthsAndYears()">
+          <option *ngFor="let year of creditCardYears">
+            {{ year }}
+          </option>
         </select>
       </div>
 
